@@ -1,0 +1,7 @@
+#include <jni.h>
+
+extern "C"
+JNIEXPORT jint JNICALL
+Java_com_example_test_Native_add(JNIEnv *, jobject, jint a, jint b) {
+    return a + b;
+}
